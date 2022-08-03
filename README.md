@@ -1,3 +1,7 @@
+# IMPORTANT NOTICE
+
+Gitlab decided to break the menu that gives you free CI minutes, so for the time being, this wont be automatically updated.
+
 ## What is this?
 
 This is a nixpkgs overlay in flake format, automatically updated daily. It gives the latest versions of the various jetbrains IDEs.
