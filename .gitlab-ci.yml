@@ -1,0 +1,30 @@
+stages:
+  - update
+ 
+update-job:
+    stage: update
+
+    before_script:
+        # Set up the SSH key and the known_hosts file
+        - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )"
+        - eval $(ssh-agent -s)
+        - echo "${SSH_PRIVATE_KEY}" | tr -d '\r' | ssh-add - > /dev/null
+        - mkdir -p ~/.ssh
+        - ssh-keyscan my.selfhostedgitlab.com >> ~/.ssh/known_hosts
+        # Install relevant python libraries
+        - pip install packaging requests xmltodict
+    script:
+        # Configure git
+        - git config --global user.email "${CI_GIT_USER_EMAIL}"
+        - git config --global user.name "${CI_GIT_USER_USERNAME}"
+        # Cone git repo
+        - git clone git@gitlab.com:genericnerdyusername/nixpkgs-auto-update-jetbrains
+        - cd nixpkgs-auto-update-jetbrains
+        - git checkout main
+
+        - cd jetbrains
+        - |
+          python3 update.py
+          git add versions.json
+          git commit -m "Update jetbrains" || echo "No changes"
+          git push origin main
