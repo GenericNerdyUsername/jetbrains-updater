@@ -14,7 +14,8 @@ then pick one of:
 
  - As an overlay: `nixpkgs.overlays = [ jetbrains-updater.overlay ];`
 
- - As an overlay, prepackaged into a module: ```
+ - As an overlay, prepackaged into a module:
+ ```
 nixosConfigurations.nixos = {
   system = "x86_64-linux";
   modules = [
