@@ -1,7 +1,3 @@
-# IMPORTANT NOTICE
-
-Gitlab decided to break the menu that gives you free CI minutes, so for the time being, this wont be automatically updated.
-
 ## What is this?
 
 This is a nixpkgs overlay in flake format, automatically updated daily. It gives the latest versions of the various jetbrains IDEs.
@@ -12,7 +8,7 @@ As most of the code in this repo is copied from `<nixos/nixpkgs>/pkgs/applicatio
 
 Be aware, this is a thing I'm making for personal use. As such, there is basically no testing other than making it work on my machine.
 
-Add to inputs: `jetbrains-updater.url = "gitlab:genericnerdyusername/jetbrains-updater";`
+Add to inputs: `jetbrains-updater.url = "githug:genericnerdyusername/jetbrains-updater";`
 
 then pick one of:
 
