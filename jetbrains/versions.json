@@ -21,11 +21,11 @@
     "goland": {
       "update-channel": "GoLand RELEASE",
       "url-template": "https://download.jetbrains.com/go/goland-{version}.tar.gz",
-      "version": "2022.2",
-      "sha256": "94cc06e80658d95f8e548aea5c5c2fb826b6d6686b0cdf11fe784603be3654ed",
-      "url": "https://download.jetbrains.com/go/goland-2022.2.tar.gz",
+      "version": "2022.2.1",
+      "sha256": "6c9ba39a96d802121908b136435220f99206c7e2e874eccee9ab0a75ec305762",
+      "url": "https://download.jetbrains.com/go/goland-2022.2.1.tar.gz",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.118"
+      "build_number": "222.3345.146"
     },
     "idea-community": {
       "update-channel": "IntelliJ IDEA RELEASE",
@@ -84,11 +84,11 @@
     "rider": {
       "update-channel": "Rider RELEASE",
       "url-template": "https://download.jetbrains.com/rider/JetBrains.Rider-{version}.tar.gz",
-      "version": "2022.2",
-      "sha256": "fa98ec717c647629b0e96cd57b138d4913fe3899032c6fc205654cab868d9808",
-      "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2022.2.tar.gz",
+      "version": "2022.2.1",
+      "sha256": "3f61c5fbdf46b94a5cb772ad51dda5a9cad8a9c7ad78dbcacf01daa2226a5633",
+      "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2022.2.1.tar.gz",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.139"
+      "build_number": "222.3739.37"
     },
     "ruby-mine": {
       "update-channel": "RubyMine RELEASE",
@@ -131,11 +131,11 @@
     "goland": {
       "update-channel": "GoLand RELEASE",
       "url-template": "https://download.jetbrains.com/go/goland-{version}.dmg",
-      "version": "2022.2",
-      "sha256": "88278249c9a4abf610eee14e98de2503393d3d871fa56d8c2818ded642bb893c",
-      "url": "https://download.jetbrains.com/go/goland-2022.2.dmg",
+      "version": "2022.2.1",
+      "sha256": "e03f93161a3a786c4550fa8bc30233a32fb54569674aefabb7ad169bc025840a",
+      "url": "https://download.jetbrains.com/go/goland-2022.2.1.dmg",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.118"
+      "build_number": "222.3345.146"
     },
     "idea-community": {
       "update-channel": "IntelliJ IDEA RELEASE",
@@ -194,11 +194,11 @@
     "rider": {
       "update-channel": "Rider RELEASE",
       "url-template": "https://download.jetbrains.com/rider/JetBrains.Rider-{version}.dmg",
-      "version": "2022.2",
-      "sha256": "71379b3889819b0c2de73f92c0e3b8b2d4e5519e71c459bcc79d065e61d7f9e9",
-      "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2022.2.dmg",
+      "version": "2022.2.1",
+      "sha256": "13cdaa0f83e645a0a08bc3dd05522441e591b247af853b22c8ca5bbce047a125",
+      "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2022.2.1.dmg",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.139"
+      "build_number": "222.3739.37"
     },
     "ruby-mine": {
       "update-channel": "RubyMine RELEASE",
@@ -241,11 +241,11 @@
     "goland": {
       "update-channel": "GoLand RELEASE",
       "url-template": "https://download.jetbrains.com/go/goland-{version}-aarch64.dmg",
-      "version": "2022.2",
-      "sha256": "e320f61730c3f088200937574e94a8aa145486f14e237e7c74806f8cd16c2c16",
-      "url": "https://download.jetbrains.com/go/goland-2022.2-aarch64.dmg",
+      "version": "2022.2.1",
+      "sha256": "d078d456508d3a47d33564e27bbf1269e4d98763aa23e74eaae741b517127b40",
+      "url": "https://download.jetbrains.com/go/goland-2022.2.1-aarch64.dmg",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.118"
+      "build_number": "222.3345.146"
     },
     "idea-community": {
       "update-channel": "IntelliJ IDEA RELEASE",
@@ -304,11 +304,11 @@
     "rider": {
       "update-channel": "Rider RELEASE",
       "url-template": "https://download.jetbrains.com/rider/JetBrains.Rider-{version}-aarch64.dmg",
-      "version": "2022.2",
-      "sha256": "bdd12c91d17df85a2359d455abb880b5ff2d461c49697af0c1617020bb53ce85",
-      "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2022.2-aarch64.dmg",
+      "version": "2022.2.1",
+      "sha256": "96e539ba43d7dcecb9e709c1b1483b4c832fbff4b9fd77f6e91b266a91125a55",
+      "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2022.2.1-aarch64.dmg",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.139"
+      "build_number": "222.3739.37"
     },
     "ruby-mine": {
       "update-channel": "RubyMine RELEASE",
