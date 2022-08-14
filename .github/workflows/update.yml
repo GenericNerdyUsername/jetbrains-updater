@@ -31,5 +31,4 @@ jobs:
     - name: Commit
       run: |
         git add -A
-        git commit -m "Version bump"
-        git push
+        git commit -m "Version bump" && git push || true
