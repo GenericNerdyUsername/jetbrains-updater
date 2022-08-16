@@ -2,13 +2,13 @@
   description = "Automatic updates for jetbrains products";
   outputs = {...}: rec {
     nixosModules.jetbrains-updater.nixpkgs.overlays = [ overlay ];
-    overlay = (final: prev: {jetbrains = pkgs final;});
+    overlay = (final: prev: {jetbrains = (pkgs final) // {jdk = prev.jetbrains.jdk;};});
     pkgs = source: import ./jetbrains/default.nix {
       fetchurl = source.fetchurl;
       lib = source.lib;
       stdenv = source.stdenv;
       callPackage = source.callPackage;
-      jdk = source.jdk;
+      jdk = source.jetbrains.jdk;
       cmake = source.cmake;
       gdb = source.gdb;
       zlib = source.zlib;
