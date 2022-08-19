@@ -3,11 +3,11 @@
     "clion": {
       "update-channel": "CLion RELEASE",
       "url-template": "https://download.jetbrains.com/cpp/CLion-{version}.tar.gz",
-      "version": "2022.2",
-      "sha256": "94ffbdf82606f2f90618c1fdb89432d627e7f24ae158b36a591da2c303047436",
-      "url": "https://download.jetbrains.com/cpp/CLion-2022.2.tar.gz",
+      "version": "2022.2.1",
+      "sha256": "a0d9e77ad4afbb5f7d69e23cf84ccf132eed6ead6c3a7cd442b33924e6931656",
+      "url": "https://download.jetbrains.com/cpp/CLion-2022.2.1.tar.gz",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.126"
+      "build_number": "222.3739.54"
     },
     "datagrip": {
       "update-channel": "DataGrip RELEASE",
@@ -57,11 +57,11 @@
     "phpstorm": {
       "update-channel": "PhpStorm RELEASE",
       "url-template": "https://download.jetbrains.com/webide/PhpStorm-{version}.tar.gz",
-      "version": "2022.2",
-      "sha256": "91c96d078c26018e7994372b4eef1c2c76772473e13c1dded06ff10de31495f4",
-      "url": "https://download.jetbrains.com/webide/PhpStorm-2022.2.tar.gz",
+      "version": "2022.2.1",
+      "sha256": "dc463578e879f958cae3c5fc775170dd0a6a89347c02aa087126f03cc7a63f79",
+      "url": "https://download.jetbrains.com/webide/PhpStorm-2022.2.1.tar.gz",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.135"
+      "build_number": "222.3739.61"
     },
     "pycharm-community": {
       "update-channel": "PyCharm RELEASE",
@@ -102,22 +102,22 @@
     "webstorm": {
       "update-channel": "WebStorm RELEASE",
       "url-template": "https://download.jetbrains.com/webstorm/WebStorm-{version}.tar.gz",
-      "version": "2022.2",
-      "sha256": "ef76189f51bc63f8d55c74a650158c08519d0480fad8a77c953f6b33652327f9",
-      "url": "https://download.jetbrains.com/webstorm/WebStorm-2022.2.tar.gz",
+      "version": "2022.2.1",
+      "sha256": "508fe7272dd049875d848b52a2908e4d228ce576d4dde5f56f51a8c346b12a2c",
+      "url": "https://download.jetbrains.com/webstorm/WebStorm-2022.2.1.tar.gz",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.108"
+      "build_number": "222.3739.57"
     }
   },
   "x86_64-darwin": {
     "clion": {
       "update-channel": "CLion RELEASE",
       "url-template": "https://download.jetbrains.com/cpp/CLion-{version}.dmg",
-      "version": "2022.2",
-      "sha256": "27f92a2513ff55a3c354e46e0562c900dbab68e26455be51c3eeb42995aa2ac1",
-      "url": "https://download.jetbrains.com/cpp/CLion-2022.2.dmg",
+      "version": "2022.2.1",
+      "sha256": "ba2a8fcf9a1f080ca6b2ef832b13104c440077b9e6a2bb6e26bc97bdea373208",
+      "url": "https://download.jetbrains.com/cpp/CLion-2022.2.1.dmg",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.126"
+      "build_number": "222.3739.54"
     },
     "datagrip": {
       "update-channel": "DataGrip RELEASE",
@@ -167,11 +167,11 @@
     "phpstorm": {
       "update-channel": "PhpStorm RELEASE",
       "url-template": "https://download.jetbrains.com/webide/PhpStorm-{version}.dmg",
-      "version": "2022.2",
-      "sha256": "f12241941a3076f22bb49193829c4412d45b20520a0617c0ee9bf8d94dca4575",
-      "url": "https://download.jetbrains.com/webide/PhpStorm-2022.2.dmg",
+      "version": "2022.2.1",
+      "sha256": "ba9cc863c2247e6404b015fac085e8b3427b29aba3d7cb07940840f7c5e3b647",
+      "url": "https://download.jetbrains.com/webide/PhpStorm-2022.2.1.dmg",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.135"
+      "build_number": "222.3739.61"
     },
     "pycharm-community": {
       "update-channel": "PyCharm RELEASE",
@@ -212,22 +212,22 @@
     "webstorm": {
       "update-channel": "WebStorm RELEASE",
       "url-template": "https://download.jetbrains.com/webstorm/WebStorm-{version}.dmg",
-      "version": "2022.2",
-      "sha256": "e9a16626aa7c7998d87f9d8c37de7f89f61b6864977d1efae3f63d606f0544aa",
-      "url": "https://download.jetbrains.com/webstorm/WebStorm-2022.2.dmg",
+      "version": "2022.2.1",
+      "sha256": "7d57692ce83dd6c853c80c457bdb8239dd833cf5535c600154a7ebc0be18a05d",
+      "url": "https://download.jetbrains.com/webstorm/WebStorm-2022.2.1.dmg",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.108"
+      "build_number": "222.3739.57"
     }
   },
   "aarch64-darwin": {
     "clion": {
       "update-channel": "CLion RELEASE",
       "url-template": "https://download.jetbrains.com/cpp/CLion-{version}-aarch64.dmg",
-      "version": "2022.2",
-      "sha256": "b25375ef2d6daa75c83d624633e18850529f0a6a72ae54bbb6a22f9343cc2c86",
-      "url": "https://download.jetbrains.com/cpp/CLion-2022.2-aarch64.dmg",
+      "version": "2022.2.1",
+      "sha256": "af36f7f9a98881d37d89757083875494c472e60d14bd70fe0d08533d284dd4e1",
+      "url": "https://download.jetbrains.com/cpp/CLion-2022.2.1-aarch64.dmg",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.126"
+      "build_number": "222.3739.54"
     },
     "datagrip": {
       "update-channel": "DataGrip RELEASE",
@@ -277,11 +277,11 @@
     "phpstorm": {
       "update-channel": "PhpStorm RELEASE",
       "url-template": "https://download.jetbrains.com/webide/PhpStorm-{version}-aarch64.dmg",
-      "version": "2022.2",
-      "sha256": "797888d4da4c63b89700cede2200808d715597d5fa6cac498d137c367f9192e3",
-      "url": "https://download.jetbrains.com/webide/PhpStorm-2022.2-aarch64.dmg",
+      "version": "2022.2.1",
+      "sha256": "b553e1f0249b4d7f89cacdac7bada758895cd35aec8ddac5f81017f61ddc44fb",
+      "url": "https://download.jetbrains.com/webide/PhpStorm-2022.2.1-aarch64.dmg",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.135"
+      "build_number": "222.3739.61"
     },
     "pycharm-community": {
       "update-channel": "PyCharm RELEASE",
@@ -322,11 +322,11 @@
     "webstorm": {
       "update-channel": "WebStorm RELEASE",
       "url-template": "https://download.jetbrains.com/webstorm/WebStorm-{version}-aarch64.dmg",
-      "version": "2022.2",
-      "sha256": "ee3faafe603550063c25911cf58682968d75cb24f90fbcca47e98d8e102a0ae4",
-      "url": "https://download.jetbrains.com/webstorm/WebStorm-2022.2-aarch64.dmg",
+      "version": "2022.2.1",
+      "sha256": "fa790240b0d00cb134bf0e87c6a85d5a749b73b3f577a9564a890e5819926e53",
+      "url": "https://download.jetbrains.com/webstorm/WebStorm-2022.2.1-aarch64.dmg",
       "version-major-minor": "2022.1",
-      "build_number": "222.3345.108"
+      "build_number": "222.3739.57"
     }
   }
 }
