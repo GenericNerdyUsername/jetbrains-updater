@@ -19,10 +19,10 @@
     "goland": {
       "update-channel": "GoLand RELEASE",
       "url-template": "https://download.jetbrains.com/go/goland-{version}.tar.gz",
-      "version": "2022.2.2",
-      "sha256": "c3cfc300f55adc3a52528d13a1133bffd2aa7c2d20ea301cd20e3aff52d87609",
-      "url": "https://download.jetbrains.com/go/goland-2022.2.2.tar.gz",
-      "build_number": "222.3739.57"
+      "version": "2022.2.3",
+      "sha256": "fda47d9939b95d8995d1a375443025599cd74b1b5a2966273477ecfafa9ce4f1",
+      "url": "https://download.jetbrains.com/go/goland-2022.2.3.tar.gz",
+      "build_number": "222.4167.25"
     },
     "idea-community": {
       "update-channel": "IntelliJ IDEA RELEASE",
@@ -91,10 +91,10 @@
     "webstorm": {
       "update-channel": "WebStorm RELEASE",
       "url-template": "https://download.jetbrains.com/webstorm/WebStorm-{version}.tar.gz",
-      "version": "2022.2.1",
-      "sha256": "508fe7272dd049875d848b52a2908e4d228ce576d4dde5f56f51a8c346b12a2c",
-      "url": "https://download.jetbrains.com/webstorm/WebStorm-2022.2.1.tar.gz",
-      "build_number": "222.3739.57"
+      "version": "2022.2.2",
+      "sha256": "506b25ff264ce882c738577044bada4e320b1f5a4dd97c2888730c91f80f071e",
+      "url": "https://download.jetbrains.com/webstorm/WebStorm-2022.2.2.tar.gz",
+      "build_number": "222.4167.31"
     }
   },
   "x86_64-darwin": {
@@ -117,10 +117,10 @@
     "goland": {
       "update-channel": "GoLand RELEASE",
       "url-template": "https://download.jetbrains.com/go/goland-{version}.dmg",
-      "version": "2022.2.2",
-      "sha256": "e11f07aebf849ed942c4b8658c11c70ce81b4138186a0301c0ec7cd236f1ff51",
-      "url": "https://download.jetbrains.com/go/goland-2022.2.2.dmg",
-      "build_number": "222.3739.57"
+      "version": "2022.2.3",
+      "sha256": "f2e9f2455cf2e13f3b7ed28c18507aa758742c533cb1c07a1ebe62172a939b47",
+      "url": "https://download.jetbrains.com/go/goland-2022.2.3.dmg",
+      "build_number": "222.4167.25"
     },
     "idea-community": {
       "update-channel": "IntelliJ IDEA RELEASE",
@@ -189,10 +189,10 @@
     "webstorm": {
       "update-channel": "WebStorm RELEASE",
       "url-template": "https://download.jetbrains.com/webstorm/WebStorm-{version}.dmg",
-      "version": "2022.2.1",
-      "sha256": "7d57692ce83dd6c853c80c457bdb8239dd833cf5535c600154a7ebc0be18a05d",
-      "url": "https://download.jetbrains.com/webstorm/WebStorm-2022.2.1.dmg",
-      "build_number": "222.3739.57"
+      "version": "2022.2.2",
+      "sha256": "196513d26ee6e41f67cc7182024774d55e63d87c10b6d5446bcbb6cfed63200c",
+      "url": "https://download.jetbrains.com/webstorm/WebStorm-2022.2.2.dmg",
+      "build_number": "222.4167.31"
     }
   },
   "aarch64-darwin": {
@@ -215,10 +215,10 @@
     "goland": {
       "update-channel": "GoLand RELEASE",
       "url-template": "https://download.jetbrains.com/go/goland-{version}-aarch64.dmg",
-      "version": "2022.2.2",
-      "sha256": "7098f05847c0524bc90b00766c71c2f1cc1442983da956c79ee1445b48da73fd",
-      "url": "https://download.jetbrains.com/go/goland-2022.2.2-aarch64.dmg",
-      "build_number": "222.3739.57"
+      "version": "2022.2.3",
+      "sha256": "c3c790a45b36af006f743a70fb114782a9c4a2076d025de65894d0f39b0f48a5",
+      "url": "https://download.jetbrains.com/go/goland-2022.2.3-aarch64.dmg",
+      "build_number": "222.4167.25"
     },
     "idea-community": {
       "update-channel": "IntelliJ IDEA RELEASE",
@@ -287,10 +287,10 @@
     "webstorm": {
       "update-channel": "WebStorm RELEASE",
       "url-template": "https://download.jetbrains.com/webstorm/WebStorm-{version}-aarch64.dmg",
-      "version": "2022.2.1",
-      "sha256": "fa790240b0d00cb134bf0e87c6a85d5a749b73b3f577a9564a890e5819926e53",
-      "url": "https://download.jetbrains.com/webstorm/WebStorm-2022.2.1-aarch64.dmg",
-      "build_number": "222.3739.57"
+      "version": "2022.2.2",
+      "sha256": "8836f302371f4d47be408012baa6d67a307db6c3e34a84cbbdf76b7fc8acad79",
+      "url": "https://download.jetbrains.com/webstorm/WebStorm-2022.2.2-aarch64.dmg",
+      "build_number": "222.4167.31"
     }
   }
 }
