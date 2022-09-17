@@ -3,7 +3,18 @@
 , vmopts ? null
 }:
 
-{ pname, product, productShort ? product, version, src, wmClass, jdk, meta, extraLdPath ? [], extraWrapperArgs ? [] }@args:
+{ pname
+, product
+, productShort ? product
+, version
+, src
+, wmClass
+, jdk
+, meta
+, extraLdPath ? []
+, extraWrapperArgs ? []
+, plugins ? []
+}@args:
 
 with lib;
 
@@ -15,7 +26,7 @@ let loName = toLower productShort;
 in
 
 with stdenv; lib.makeOverridable mkDerivation (rec {
-  inherit pname version src;
+  inherit pname version src plugins;
   meta = args.meta // { mainProgram = pname; };
 
   desktopItem = makeDesktopItem {
@@ -34,41 +45,41 @@ with stdenv; lib.makeOverridable mkDerivation (rec {
   nativeBuildInputs = [ makeWrapper patchelf unzip ];
 
   postPatch = ''
-      get_file_size() {
-        local fname="$1"
-        echo $(ls -l $fname | cut -d ' ' -f5)
-      }
-
-      munge_size_hack() {
-        local fname="$1"
-        local size="$2"
-        strip $fname
-        truncate --size=$size $fname
-      }
-
-      interpreter=$(echo ${stdenv.cc.libc}/lib/ld-linux*.so.2)
-      if [[ "${stdenv.hostPlatform.system}" == "x86_64-linux" && -e bin/fsnotifier64 ]]; then
-        target_size=$(get_file_size bin/fsnotifier64)
-        patchelf --set-interpreter "$interpreter" bin/fsnotifier64
-        munge_size_hack bin/fsnotifier64 $target_size
-      else
-        target_size=$(get_file_size bin/fsnotifier)
-        patchelf --set-interpreter "$interpreter" bin/fsnotifier
-        munge_size_hack bin/fsnotifier $target_size
-      fi
+    get_file_size() {
+      local fname="$1"
+      echo $(ls -l $fname | cut -d ' ' -f5)
+    }
+    munge_size_hack() {
+      local fname="$1"
+      local size="$2"
+      strip $fname
+      truncate --size=$size $fname
+    }
+    interpreter=$(echo ${stdenv.cc.libc}/lib/ld-linux*.so.2)
+    if [[ "${stdenv.hostPlatform.system}" == "x86_64-linux" && -e bin/fsnotifier64 ]]; then
+      target_size=$(get_file_size bin/fsnotifier64)
+      patchelf --set-interpreter "$interpreter" bin/fsnotifier64
+      munge_size_hack bin/fsnotifier64 $target_size
+    else
+      target_size=$(get_file_size bin/fsnotifier)
+      patchelf --set-interpreter "$interpreter" bin/fsnotifier
+      munge_size_hack bin/fsnotifier $target_size
+    fi
   '';
 
   installPhase = ''
     runHook preInstall
-
     mkdir -p $out/{bin,$pname,share/pixmaps,libexec/${pname}}
     cp -a . $out/$pname
+    IFS=' ' read -ra pluginArray <<< "$plugins"
+    for plugin in "''${pluginArray[@]}"
+    do
+        ln -s "$plugin" -t $out/$pname/plugins/
+    done
     ln -s $out/$pname/bin/${loName}.png $out/share/pixmaps/${pname}.png
     mv bin/fsnotifier* $out/libexec/${pname}/.
-
     jdk=${jdk.home}
     item=${desktopItem}
-
     makeWrapper "$out/$pname/bin/${loName}.sh" "$out/bin/${pname}" \
       --prefix PATH : "$out/libexec/${pname}:${lib.makeBinPath [ jdk coreutils gnugrep which git ]}" \
       --prefix LD_LIBRARY_PATH : "${lib.makeLibraryPath ([
@@ -82,9 +93,7 @@ with stdenv; lib.makeOverridable mkDerivation (rec {
       --set-default JAVA_HOME "$jdk" \
       --set ${hiName}_JDK "$jdk" \
       --set ${hiName}_VM_OPTIONS ${vmoptsFile}
-
     ln -s "$item/share/applications" $out/share
-
     runHook postInstall
   '';
 

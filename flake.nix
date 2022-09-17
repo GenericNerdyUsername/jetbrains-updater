@@ -1,5 +1,5 @@
-# TODO add plugin support
 # TODO actually use jcef in jdk compile
+# TODO add more stuff to README
 
 {
   description = "Automatic updates for jetbrains products";
