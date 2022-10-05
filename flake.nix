@@ -1,4 +1,3 @@
-# TODO actually use jcef in jdk compile
 # TODO add more stuff to README
 
 {
@@ -6,7 +5,6 @@
 
   outputs = { nixpkgs, ... }: rec {
     overlay = (final: prev: {
-      jcef = final.callPackage ./jcef.nix {};
       jetbrains = final.callPackage ./jetbrains {}
         // { jdk = final.callPackage ./jetbrains-jdk.nix {}; };
     });
