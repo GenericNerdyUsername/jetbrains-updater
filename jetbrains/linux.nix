@@ -1,6 +1,7 @@
 { stdenv, lib, makeDesktopItem, makeWrapper, patchelf, writeText
 , coreutils, gnugrep, which, git, unzip, libsecret, libnotify, e2fsprogs
 , vmopts ? null
+, nss, nspr, libdrm, libXdamage,libX11, libXrandr, libXi, libXcursor, libxcb
 }:
 
 { pname
@@ -65,6 +66,8 @@ with stdenv; lib.makeOverridable mkDerivation (rec {
       patchelf --set-interpreter "$interpreter" bin/fsnotifier
       munge_size_hack bin/fsnotifier $target_size
     fi
+
+    rm -rf jbr
   '';
 
   installPhase = ''
@@ -86,6 +89,8 @@ with stdenv; lib.makeOverridable mkDerivation (rec {
         # Some internals want libstdc++.so.6
         stdenv.cc.cc.lib libsecret e2fsprogs
         libnotify
+        nss nspr libdrm
+        libXdamage libX11 libXrandr libXi libXcursor libxcb
       ] ++ extraLdPath)}" \
       ${lib.concatStringsSep " " extraWrapperArgs} \
       --set-default JDK_HOME "$jdk" \
