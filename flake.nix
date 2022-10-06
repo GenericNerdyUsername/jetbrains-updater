@@ -5,7 +5,7 @@
 
   outputs = { nixpkgs, ... }: rec {
     overlay = (final: prev: {
-      jetbrains = final.callPackage ./jetbrains {}
+      jetbrains = final.callPackage ./jetbrains { jdk = final.jetbrains.jdk; }
         // { jdk = final.callPackage ./jetbrains-jdk.nix {}; };
     });
     nixosModules.jetbrains-updater.nixpkgs.overlays = [ overlay ];
