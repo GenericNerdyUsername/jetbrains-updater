@@ -27,18 +27,18 @@
     "idea-community": {
       "update-channel": "IntelliJ IDEA RELEASE",
       "url-template": "https://download.jetbrains.com/idea/ideaIC-{version}.tar.gz",
-      "version": "2022.2.2",
-      "sha256": "c16fcdb1c6d72369642b98b9425eae932834b17687ea231204b30ed813333aff",
-      "url": "https://download.jetbrains.com/idea/ideaIC-2022.2.2.tar.gz",
-      "build_number": "222.4167.29"
+      "version": "2022.2.3",
+      "sha256": "4ba5faafad48d58db5099fae080ae2238086d3d9803080082de8efe35d8bf4ed",
+      "url": "https://download.jetbrains.com/idea/ideaIC-2022.2.3.tar.gz",
+      "build_number": "222.4345.14"
     },
     "idea-ultimate": {
       "update-channel": "IntelliJ IDEA RELEASE",
       "url-template": "https://download.jetbrains.com/idea/ideaIU-{version}-no-jbr.tar.gz",
-      "version": "2022.2.2",
-      "sha256": "cc19a2ecfcb399ff4ac695a290450dde4ad7bb4b048e0b022d366bfd7595fb8b",
-      "url": "https://download.jetbrains.com/idea/ideaIU-2022.2.2-no-jbr.tar.gz",
-      "build_number": "222.4167.29"
+      "version": "2022.2.3",
+      "sha256": "7454d7e0b8f4e3d8d805dde645d28b842101bd77aea8b29125880c592e6b8c85",
+      "url": "https://download.jetbrains.com/idea/ideaIU-2022.2.3-no-jbr.tar.gz",
+      "build_number": "222.4345.14"
     },
     "mps": {
       "update-channel": "MPS RELEASE",
@@ -125,18 +125,18 @@
     "idea-community": {
       "update-channel": "IntelliJ IDEA RELEASE",
       "url-template": "https://download.jetbrains.com/idea/ideaIC-{version}.dmg",
-      "version": "2022.2.2",
-      "sha256": "46d103913c4d40b602fc83f0b65020df038dd9c815e169cd1fc79964e99fd616",
-      "url": "https://download.jetbrains.com/idea/ideaIC-2022.2.2.dmg",
-      "build_number": "222.4167.29"
+      "version": "2022.2.3",
+      "sha256": "6ec3721d9961918a14630eaf068765eeba97e71baecd95ec67510dc25c8bd1b1",
+      "url": "https://download.jetbrains.com/idea/ideaIC-2022.2.3.dmg",
+      "build_number": "222.4345.14"
     },
     "idea-ultimate": {
       "update-channel": "IntelliJ IDEA RELEASE",
       "url-template": "https://download.jetbrains.com/idea/ideaIU-{version}.dmg",
-      "version": "2022.2.2",
-      "sha256": "a667858bcfb3686291db0310da3bb73da2c32281828ad0b941c6bc57b7dbcf27",
-      "url": "https://download.jetbrains.com/idea/ideaIU-2022.2.2.dmg",
-      "build_number": "222.4167.29"
+      "version": "2022.2.3",
+      "sha256": "df780c841398532e090adc2c6af35a7fbcdd29fddb37e5a68f33d61a9032d5a3",
+      "url": "https://download.jetbrains.com/idea/ideaIU-2022.2.3.dmg",
+      "build_number": "222.4345.14"
     },
     "mps": {
       "update-channel": "MPS RELEASE",
@@ -223,18 +223,18 @@
     "idea-community": {
       "update-channel": "IntelliJ IDEA RELEASE",
       "url-template": "https://download.jetbrains.com/idea/ideaIC-{version}-aarch64.dmg",
-      "version": "2022.2.2",
-      "sha256": "dd4b34ba9eab6a812966384d211c76dd7c6389e0b3e50f71ab7e45e8f8c1de7b",
-      "url": "https://download.jetbrains.com/idea/ideaIC-2022.2.2-aarch64.dmg",
-      "build_number": "222.4167.29"
+      "version": "2022.2.3",
+      "sha256": "333c70caf452034ae332cdded4d24a71592049b4045725eb57826a0b997d1c7a",
+      "url": "https://download.jetbrains.com/idea/ideaIC-2022.2.3-aarch64.dmg",
+      "build_number": "222.4345.14"
     },
     "idea-ultimate": {
       "update-channel": "IntelliJ IDEA RELEASE",
       "url-template": "https://download.jetbrains.com/idea/ideaIU-{version}-aarch64.dmg",
-      "version": "2022.2.2",
-      "sha256": "bdd833bce38605fdc8bdad95d15916b0952546de32835e54a133cb37c90847c7",
-      "url": "https://download.jetbrains.com/idea/ideaIU-2022.2.2-aarch64.dmg",
-      "build_number": "222.4167.29"
+      "version": "2022.2.3",
+      "sha256": "9e5c32fffd17d651d8d875c2588a067902a9ebb9bf815d06aabfd75b9f4ee3cd",
+      "url": "https://download.jetbrains.com/idea/ideaIU-2022.2.3-aarch64.dmg",
+      "build_number": "222.4345.14"
     },
     "mps": {
       "update-channel": "MPS RELEASE",
