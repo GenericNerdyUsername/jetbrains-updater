@@ -83,10 +83,10 @@
     "ruby-mine": {
       "update-channel": "RubyMine RELEASE",
       "url-template": "https://download.jetbrains.com/ruby/RubyMine-{version}.tar.gz",
-      "version": "2022.2.2",
-      "sha256": "b76f1c329e030bd3d29f41c68cc84f7c963980d3f52e31b8bfe2f649c4d05b53",
-      "url": "https://download.jetbrains.com/ruby/RubyMine-2022.2.2.tar.gz",
-      "build_number": "222.4167.28"
+      "version": "2022.2.3",
+      "sha256": "a8c3412db30ab7bd8b8601b0a50c95dc48a412391f1c33df27c47cf5d2204257",
+      "url": "https://download.jetbrains.com/ruby/RubyMine-2022.2.3.tar.gz",
+      "build_number": "222.4345.14"
     },
     "webstorm": {
       "update-channel": "WebStorm RELEASE",
@@ -181,10 +181,10 @@
     "ruby-mine": {
       "update-channel": "RubyMine RELEASE",
       "url-template": "https://download.jetbrains.com/ruby/RubyMine-{version}.dmg",
-      "version": "2022.2.2",
-      "sha256": "3d8b456fe7fa97c6afd3d07529e7aa0c9131c16dca8663351444ed4024b47bd4",
-      "url": "https://download.jetbrains.com/ruby/RubyMine-2022.2.2.dmg",
-      "build_number": "222.4167.28"
+      "version": "2022.2.3",
+      "sha256": "a04700159fcf3bfed74d196edc4c1150e5906dc4730d06ffd017b6bbb9bc853b",
+      "url": "https://download.jetbrains.com/ruby/RubyMine-2022.2.3.dmg",
+      "build_number": "222.4345.14"
     },
     "webstorm": {
       "update-channel": "WebStorm RELEASE",
@@ -279,10 +279,10 @@
     "ruby-mine": {
       "update-channel": "RubyMine RELEASE",
       "url-template": "https://download.jetbrains.com/ruby/RubyMine-{version}-aarch64.dmg",
-      "version": "2022.2.2",
-      "sha256": "c2140006c0190a83c086a00b1c52fdc8c8e44de4314f0711a209fbf7d78044be",
-      "url": "https://download.jetbrains.com/ruby/RubyMine-2022.2.2-aarch64.dmg",
-      "build_number": "222.4167.28"
+      "version": "2022.2.3",
+      "sha256": "cd7a967c2745aca566569a320eb276773638d05fcd25839db18a098803d2c5f4",
+      "url": "https://download.jetbrains.com/ruby/RubyMine-2022.2.3-aarch64.dmg",
+      "build_number": "222.4345.14"
     },
     "webstorm": {
       "update-channel": "WebStorm RELEASE",
