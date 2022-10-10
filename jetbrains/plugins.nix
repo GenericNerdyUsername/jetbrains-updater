@@ -53,7 +53,7 @@ rec {
       name = "jb-plugin-${toString id}-req";
       url = requestUrl;
       inherit hash;
-      postFetch = "sed -e 's/\"compatibleVersions\":{[^}]*},//g' -e 's/\"downloads\":[0-9]+,//' $out | tee $out";
+      postFetch = "sed -e 's/\"compatibleVersions\":{[^}]*},//g' -e 's/\"downloads\":[0-9]*,//g' $out | tee $out";
     };
     resp = fromJSON (readFile fetchurlCall.outPath);
     target = let
