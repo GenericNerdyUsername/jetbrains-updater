@@ -15,9 +15,30 @@
 # plugin = urlToDrv (pluginInfo // {hash="sha256-...";});
 # editor = addPlugins pkgs.jetbrains.idea-ultimate [ plugin ];
 rec {
-  addPlugins = ide: plugins: ide.overrideAttrs (old: {
-    plugins = old.plugins ++ plugins;
-  });
+  addPlugins = ide: plugins: stdenv.mkDerivation {
+     pname = ide.pname + lib.optionalString (lib.hasSuffix ide.pname "-with-plugins") "-with-plugins";
+     version = ide.version;
+     src = ide;
+     dontInstall = true;
+     dontFixup = true;
+     passthru.previous = ide;
+     passthru.plugins = plugins ++ (ide.plugins or []);
+     newPlugins = plugins;
+     buildPhase = let
+       pluginCmdsLines = map (plugin: "ln -s ${plugin} \"$out\"/${ide.pname}/plugins/${builtins.baseNameOf plugin}") plugins;
+       pluginCmds = builtins.concatStringsSep "\n" pluginCmdsLines;
+     in ''
+       cp -r ${ide} $out
+       chmod +w -R $out
+       IFS=' ' read -ra pluginArray <<< "$newPlugins"
+       for plugin in "''${pluginArray[@]}"
+       do
+        ln -s "$plugin" -t $out/$pname/plugins/
+       done
+       sed "s|${ide.outPath}|$out|" -i $out/bin/$pname
+       '';
+  };
+
 
   urlToDrv = {
     url,
@@ -27,8 +48,8 @@ rec {
     ...
   }: let
     src = if lib.strings.hasSuffix ".jar" url then
-      fetchurl { inherit url hash; executable = true; }
-    else fetchzip { inherit url hash name; extension = ".zip"; executable = true; };
+      fetchurl { inherit url hash; executable = true;}
+    else fetchzip { inherit url hash name; stripRoot = false; extension = ".zip"; executable = true; };
   in
   if extra ? commands then
     stdenv.mkDerivation {
