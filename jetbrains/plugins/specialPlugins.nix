@@ -1,14 +1,14 @@
-{ delve, autoPatchelfHook, stdenv, gcc-unwrapped }:
+{ delve, autoPatchelfHook, stdenv }:
 # This is a list of plugins that need special treatment. For example, the go plugin (id is 9568) comes with delve, a
 # debugger, but that needs various linking fixes. The changes here replace it with the system one.
 {
   "631" = { # Python
     nativeBuildInputs = [ autoPatchelfHook ];
-    buildInputs = [ gcc-unwrapped ];
+    buildInputs = [ stdenv.cc.cc.lib ];
   };
   "7322" = {  # Python community edition
     nativeBuildInputs = [ autoPatchelfHook ];
-    buildInputs = [ gcc-unwrapped ];
+    buildInputs = [ stdenv.cc.cc.lib ];
   };
   "7495" = { # .ignore
     buildPhase = ''
