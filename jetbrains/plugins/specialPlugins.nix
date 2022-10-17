@@ -10,6 +10,12 @@
     nativeBuildInputs = [ autoPatchelfHook ];
     buildInputs = [ gcc-unwrapped ];
   };
+  "7495" = { # .ignore
+    buildPhase = ''
+      echo "Due to the unpacked directory starting with a `.`, this plugin won't work until #191355 is merged."
+      exit 1
+      '';
+  };
   "8182" = { # Rust
     nativeBuildInputs = [ autoPatchelfHook ];
     commands = "chmod +x -R bin";
