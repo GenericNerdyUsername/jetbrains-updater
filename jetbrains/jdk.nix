@@ -42,11 +42,11 @@ openjdk17.overrideAttrs (oldAttrs: rec {
     owner = "JetBrains";
     repo = "JetBrainsRuntime";
     rev = "jb${version}";
-    hash = "sha256-Z1rErwhu7bObyWi06S7RmiNBE3v9EjOcgui5uuq336Q=";
-    leaveDotGit = true;
+    hash = "sha256-0umI0qB0TILYzXqYlJVOcoONdUp2Cw4HI58B/lesfS8=";
   };
 
   BOOT_JDK = openjdk17-bootstrap.home;
+  SOURCE_DATE_EPOCH = 1666098567;
 
   # Configure is done in build phase
   configurePhase = "true";
@@ -57,10 +57,16 @@ openjdk17.overrideAttrs (oldAttrs: rec {
     mkdir -p jcef_linux_x64/jmods
     cp ${jetbrains.jcef}/* jcef_linux_x64/jmods
 
-    sed -i "s/OPENJDK_TAG=.*/OPENJDK_TAG=${openjdkTag}/" jb/project/tools/common/scripts/common.sh
+    sed \
+        -e "s/OPENJDK_TAG=.*/OPENJDK_TAG=${openjdkTag}/" \
+        -e "s/SOURCE_DATE_EPOCH=.*//" \
+        -e "s/export SOURCE_DATE_EPOCH//" \
+        -i jb/project/tools/common/scripts/common.sh
     sed -i "s/STATIC_CONF_ARGS/STATIC_CONF_ARGS \$configureFlags/" jb/project/tools/linux/scripts/mkimages_x64.sh
-    sed -i "s/create_image_bundle \"jb/#/" jb/project/tools/linux/scripts/mkimages_x64.sh
-    sed -i "s/echo Creating /exit 0 #/" jb/project/tools/linux/scripts/mkimages_x64.sh
+    sed \
+        -e "s/create_image_bundle \"jb/#/" \
+        -e "s/echo Creating /exit 0 #/" \
+        -i jb/project/tools/linux/scripts/mkimages_x64.sh
 
     patchShebangs .
     ./jb/project/tools/linux/scripts/mkimages_x64.sh ${build} ${if debugBuild then "fd" else "jcef"}
