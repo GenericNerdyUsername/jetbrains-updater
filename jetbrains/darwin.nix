@@ -30,11 +30,6 @@ in
       open -na '$APP_DIR' --args "\$@"
       EOF
       chmod +x "$out/bin/${loname}"
-      IFS=' ' read -ra pluginArray <<< "$plugins"
-      for plugin in "''${pluginArray[@]}"
-      do
-          ln -s "$plugin" -t $out/$pname/plugins/
-      done
       runHook postInstall
     '';
     nativeBuildInputs = [ undmg ];

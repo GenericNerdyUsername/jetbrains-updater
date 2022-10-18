@@ -74,11 +74,6 @@ with stdenv; lib.makeOverridable mkDerivation (rec {
     runHook preInstall
     mkdir -p $out/{bin,$pname,share/pixmaps,libexec/${pname}}
     cp -a . $out/$pname
-    IFS=' ' read -ra pluginArray <<< "$plugins"
-    for plugin in "''${pluginArray[@]}"
-    do
-        ln -s "$plugin" -t $out/$pname/plugins/
-    done
     ln -s $out/$pname/bin/${loName}.png $out/share/pixmaps/${pname}.png
     mv bin/fsnotifier* $out/libexec/${pname}/.
     jdk=${jdk.home}
