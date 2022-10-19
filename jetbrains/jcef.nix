@@ -3,7 +3,7 @@
 , fetchzip
 , stdenv
 , cmake
-, python
+, python3
 , jdk
 , git
 , libcef
@@ -79,7 +79,7 @@ in stdenv.mkDerivation rec {
   rev = "440988795507d9faa888894b77cf089b1ebdc0de";
   commit-num = "594";  # Run `git rev-list --count HEAD` in a git repo hard reset to the above rev
 
-  nativeBuildInputs = [ cmake python jdk git rsync ant ninja ];
+  nativeBuildInputs = [ cmake python3 jdk git rsync ant ninja ];
   buildInputs = [ libX11 libXdamage nss nspr ];
 
   src = fetchFromGitHub {
