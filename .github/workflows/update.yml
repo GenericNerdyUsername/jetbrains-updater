@@ -27,7 +27,7 @@ jobs:
     - name: Update
       run: |
         cd jetbrains
-        python3 update.py
+        python3 update_ides.py
     - name: Commit
       run: |
         git add -A
